@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "1.20-1.20.4": {
+      "profile_id": "1.20-1.20.4",
+      "game_versions": {
+        "1.20": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.20.1": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.20.2": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.20.3": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.20.4": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."}
+      }
+    },
+    "1.20.5-1.21.10": {
+      "profile_id": "1.20.5-1.21.10",
+      "game_versions": {
+        "1.20.5": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.20.6": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.1": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.2": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.3": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.4": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.5": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.6": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.7": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.8": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.9": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "1.21.10": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."}
+      }
+    },
+    "1.21.11": {
+      "profile_id": "1.21.11",
+      "game_versions": {
+        "1.21.11": {
+          "status": "server-passed",
+          "date": "2026-06-13",
+          "install_set": "bigger-boats-server-only",
+          "marker": "BIGGERBOATS_SERVER_SMOKE_TEST_PASS",
+          "notes": "Local dedicated-server smoke passed for Minecraft 1.21.11 with maxPassengers=4. Client smoke is still pending."
+        }
+      }
+    },
+    "26.1-26.2-pre-3": {
+      "profile_id": "26.1-26.2-pre-3",
+      "game_versions": {
+        "26.1": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "26.1.1": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "26.1.2": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."},
+        "26.2-pre-3": {"status": "pending", "notes": "No Bigger Boats smoke run recorded yet."}
+      }
+    }
+  }
+}

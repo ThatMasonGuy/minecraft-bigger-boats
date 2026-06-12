@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "tempeststudios.biggerboats.mixin",
+  "compatibilityLevel": "${mixin_compatibility_level}",
+  "client": ["BiggerBoatsRendererMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
