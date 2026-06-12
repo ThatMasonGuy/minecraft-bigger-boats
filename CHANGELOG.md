@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 - Unreleased
+## 1.0.0 - 2026-06-13
 
 - Scaffolded Bigger Boats from the Lifetime Stat Tracker multi-version Fabric
   pipeline, including Gradle profiles, GitHub Actions build/smoke workflows,

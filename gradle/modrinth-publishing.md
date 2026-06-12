@@ -52,5 +52,5 @@ gradle/release-notes/<mod_version>.md
 ```
 
 For the initial release, keep
-`gradle/release-notes/0.1.0.md` focused on user-visible behavior and install
+`gradle/release-notes/1.0.0.md` focused on user-visible behavior and install
 notes.

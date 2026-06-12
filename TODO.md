@@ -42,6 +42,6 @@
   PATCH requests, but the draft project currently reads back as
   `project_type=project`, `client_side=unknown`, and `server_side=unknown`.
   Recheck those fields after the project type/status is corrected in Modrinth.
-- Keep release notes in `gradle/release-notes/0.1.0.md`.
+- Keep release notes in `gradle/release-notes/1.0.0.md`.
 - Keep public project-page copy in `gradle/modrinth-project-pages.md`.
 - After a successful real publish, tag the exact publish workflow commit.
