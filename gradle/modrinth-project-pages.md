@@ -43,6 +43,7 @@ Fabric API is required.
 - 2026-06-13: Updated the live Modrinth summary, description, license, and icon
   through the Modrinth API.
 - 2026-06-13: Modrinth accepted PATCH requests for `client_side=optional` and
-  `server_side=required`, but the draft project reads back as
-  `project_type=project`, `client_side=unknown`, and `server_side=unknown`.
-  Recheck those fields after the hosted project type/status is corrected.
+  `server_side=required`; after the first version upload the project reads back
+  as `project_type=mod`, `client_side=optional`, and `server_side=required`.
+- 2026-06-13: Published `1.0.0` as listed Modrinth versions `7VszMwsz`,
+  `Wn7e3XTl`, `sb9snz5O`, and `7SOT3TOv`.

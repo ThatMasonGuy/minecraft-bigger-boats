@@ -20,6 +20,9 @@
 - Updated the live Modrinth project page copy, license, and icon.
 - Recorded local 1.21.11 dedicated-server smoke evidence proving the server
   sees `maxPassengers=4`.
+- Published release jars for all supported compatibility profiles after the
+  GitHub publish gate passed client and dedicated-server smoke across the full
+  supported matrix.
 
 ## Research Notes
 
@@ -33,6 +36,5 @@
   `net.minecraft.world.entity.vehicle.Boat` in `1.20.x`,
   `net.minecraft.world.entity.vehicle.AbstractBoat` through `1.21.10`, and
   `net.minecraft.world.entity.vehicle.boat.AbstractBoat` in `1.21.11+`.
-- The Modrinth project currently reads back as `project_type=project`, which
-  prevents the desired side-support flags from sticking while it remains in
-  that hosted state.
+- The Modrinth project now reads back as `project_type=mod`,
+  `client_side=optional`, and `server_side=required`.

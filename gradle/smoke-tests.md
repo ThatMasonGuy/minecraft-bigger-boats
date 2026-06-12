@@ -40,6 +40,18 @@ making that historical record publish-blocking again.
   and began launching the wider default smoke set before it was stopped. Use
   `biggerboats_smoke_profiles` and `biggerboats_smoke_game_versions`.
 
+## Publish Evidence
+
+- 2026-06-13: GitHub Actions run `27429801346` completed the real
+  `modrinth publish` workflow with `dry_run=false`, `version_type=release`, and
+  `requested_status=listed`.
+- The publish gate built all supported profile jars, ran client and
+  dedicated-server smoke for every supported profile/game-version pair, printed
+  `BIGGERBOATS_SMOKE_TEST_PASS` and `BIGGERBOATS_SERVER_SMOKE_TEST_PASS`, and
+  uploaded the release jars to Modrinth.
+- GitHub Actions run `27429795249` was rerun after a transient Fabric Loom
+  download failure and completed the normal `build` workflow successfully.
+
 ## Commands
 
 ```powershell

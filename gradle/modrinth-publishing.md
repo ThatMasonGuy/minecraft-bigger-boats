@@ -43,6 +43,17 @@ Inputs:
 
 Real publishes require the repository secret `MODRINTH_TOKEN`.
 
+## Publish History
+
+- 2026-06-13: `1.0.0` was published by GitHub Actions run `27429801346` from
+  commit `61113dbe297c96f7b132dfd1ce77d010dc519b7f` with `dry_run=false`,
+  `version_type=release`, and `requested_status=listed`.
+- Modrinth version ids:
+  - `1.0.0+mc1.20-1.20.4`: `7VszMwsz`
+  - `1.0.0+mc1.20.5-1.21.10`: `Wn7e3XTl`
+  - `1.0.0+mc1.21.11`: `sb9snz5O`
+  - `1.0.0+mc26.1-26.2-pre-3`: `7SOT3TOv`
+
 ## Release Notes
 
 Per-version Modrinth changelogs live in:
