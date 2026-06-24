@@ -39,6 +39,17 @@ making that historical record publish-blocking again.
 - 2026-06-13: A prior `smokeTestSelected` attempt used incorrect property names
   and began launching the wider default smoke set before it was stopped. Use
   `biggerboats_smoke_profiles` and `biggerboats_smoke_game_versions`.
+- 2026-06-24: `buildAllVersions` passed locally for `1.0.1` across supported
+  profiles `1.20-1.20.4`, `1.20.5-1.21.10`, `1.21.11`, `26.1-26.1.2`,
+  `26.2`, and `26.3-snapshot-1`.
+- 2026-06-24: `smokeTestSelectedServers` passed locally for profiles `26.2`
+  and `26.3-snapshot-1`, game versions `26.2` and `26.3-snapshot-1`, install
+  set `bigger-boats-server-only`, with marker
+  `BIGGERBOATS_SERVER_SMOKE_TEST_PASS` and `maxPassengers=4`.
+- 2026-06-24: `smokeTestSelectedClients` passed locally for profiles `26.2`
+  and `26.3-snapshot-1`, game versions `26.2` and `26.3-snapshot-1`, install
+  set `bigger-boats-client-only`, with marker `BIGGERBOATS_SMOKE_TEST_PASS`
+  and `maxPassengers=4`.
 
 ## Publish Evidence
 

@@ -62,6 +62,6 @@ Per-version Modrinth changelogs live in:
 gradle/release-notes/<mod_version>.md
 ```
 
-For the initial release, keep
-`gradle/release-notes/1.0.0.md` focused on user-visible behavior and install
+For the active release, keep
+`gradle/release-notes/1.0.1.md` focused on user-visible behavior and install
 notes.

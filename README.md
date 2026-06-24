@@ -43,7 +43,9 @@ donor Lifetime Stat Tracker repo:
 - `1.20-1.20.4`
 - `1.20.5-1.21.10`
 - `1.21.11`
-- `26.1-26.2-pre-3`
+- `26.1-26.1.2`
+- `26.2`
+- `26.3-snapshot-1`
 
 Minecraft's boat classes moved across these ranges, so Bigger Boats uses small
 compatibility overlays for the different package layouts. See

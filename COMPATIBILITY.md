@@ -10,7 +10,9 @@ same version-profile model as Lifetime Stat Tracker.
 | `1.20-1.20.4` | `1.20` | `1.20` through `1.20.4` | `1.20-1.20.4` |
 | `1.20.5-1.21.10` | `1.21.10` | `1.20.5` through `1.21.10` | `1.20.5-1.21.10` |
 | `1.21.11` | `1.21.11` | `1.21.11` | `1.21.11` |
-| `26.1-26.2-pre-3` | `26.2-pre-3` | `26.1` through `26.2-pre-3` | `26.x` |
+| `26.1-26.1.2` | `26.1.2` | `26.1` through `26.1.2` | `26.x` |
+| `26.2` | `26.2` | `26.2` | `26.x` |
+| `26.3-snapshot-1` | `26.3-snapshot-1` | `26.3-snapshot-1` | `26.x` |
 
 ## Drift Surfaces
 
@@ -22,8 +24,10 @@ same version-profile model as Lifetime Stat Tracker.
 - Newer clients use render states through
   `net.minecraft.client.renderer.entity.AbstractBoatRenderer`; `1.20.x` renders
   directly through `BoatRenderer#render`.
-- The experimental `26.x` lane changes some renderer package names and uses the
-  non-remap build lane inherited from the donor pipeline.
+- The `26.x` lane changes some renderer package names, uses the non-remap
+  build lane inherited from the donor pipeline, and now publishes separate
+  profile jars for each current 26.x minor line because Fabric API advertises
+  separate Minecraft dependency predicates for `26.1`, `26.2`, and `26.3`.
 
 ## Server-Only Contract
 

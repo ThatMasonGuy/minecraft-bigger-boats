@@ -16,6 +16,9 @@ testing before publishing.
 - `1.21.11+`: boat behavior moved under `vehicle.boat.AbstractBoat`.
 - Client render hooks differ between direct entity rendering in `1.20.x` and
   render-state submission in newer versions.
+- Current 26.x profiles share one source overlay but publish as `26.1-26.1.2`,
+  `26.2`, and `26.3-snapshot-1` so each jar builds against the matching Fabric
+  API and Minecraft dependency predicate.
 
 ## Promotion Rule
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.0.1 - 2026-06-24
+
+- Added stable Minecraft `26.2` and `26.3-snapshot-1` support profiles while
+  keeping the existing `26.x` source compatibility overlay.
+- Split the old prerelease-era `26.1-26.2-pre-3` release lane into
+  `26.1-26.1.2`, `26.2`, and `26.3-snapshot-1` publish profiles to match
+  Fabric API's current per-minor Minecraft dependency predicates.
+- Updated the 26.x build lane to Fabric Loader `0.19.3`, Loom `1.17-SNAPSHOT`,
+  Fabric API `0.153.0+26.2` for stable `26.2`, and Fabric API `0.153.1+26.3`
+  for `26.3-snapshot-1`.
+- Updated the Gradle wrapper to `9.5.1` for the current Fabric 26.2 toolchain.
+- Verified `1.0.1` locally with `buildAllVersions` plus targeted client and
+  dedicated-server smoke for `26.2` and `26.3-snapshot-1`.
+
 ## 1.0.0 - 2026-06-13
 
 - Scaffolded Bigger Boats from the Lifetime Stat Tracker multi-version Fabric

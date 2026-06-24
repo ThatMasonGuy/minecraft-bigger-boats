@@ -24,7 +24,7 @@ we intentionally decide to publish more jars.
 
 ```properties
 minecraft_version_profile=1.21.11
-supported_minecraft_version_profiles=1.20-1.20.4,1.20.5-1.21.10,1.21.11,26.1-26.2-pre-3
+supported_minecraft_version_profiles=1.20-1.20.4,1.20.5-1.21.10,1.21.11,26.1-26.1.2,26.2,26.3-snapshot-1
 candidate_minecraft_version_profiles=
 smoke_test_required_minecraft_version_profiles=
 ```
@@ -33,6 +33,12 @@ The supported profile list controls build and publish planning. The historical
 smoke-required list is intentionally empty until real Bigger Boats smoke runs
 are recorded. Live `ciValidation` and `publishValidation` still launch client
 and dedicated-server smoke tasks.
+
+The 26.x source compatibility group currently publishes as three release
+profiles: `26.1-26.1.2`, `26.2`, and `26.3-snapshot-1`. They share the same
+`compat_group=26.x` sources, but use separate compile anchors and Fabric API
+versions because Fabric publishes separate Minecraft dependency predicates for
+each current 26.x minor line.
 
 ## Profile Fields
 

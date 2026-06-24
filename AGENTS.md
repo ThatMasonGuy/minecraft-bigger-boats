@@ -102,7 +102,7 @@ Examples of major boundaries for this project:
 - Gradle version-profile foundation.
 - Java toolchain and CI workflow changes.
 - Resource expansion for Minecraft, Java, and Mixin compatibility metadata.
-- Client command, networking, stat packet, or advancement compatibility shims.
+- Boat capacity, passenger positioning, or renderer compatibility shims.
 - Minecraft `26.x` remap vs non-remap build lane.
 - Smoke-test launcher automation.
 - Modrinth publishing automation.
@@ -110,11 +110,12 @@ Examples of major boundaries for this project:
 
 ## Current Direction
 
-- Keep Lifetime Stat Tracker as one public mod jar.
-- Preserve client-only usefulness while retaining optional server install support
-  for reliable world identity.
-- Preserve the on-disk JSON data model and backup behavior unless an explicit
-  migration is added and documented.
+- Keep Bigger Boats as a small server-side-first Fabric mod with one public jar
+  per release compatibility profile.
+- Preserve server-side gameplay support while keeping client installation
+  optional and visual-only.
+- Do not add new entities, items, recipes, blocks, or data files unless the
+  feature explicitly requires them.
 - Treat Minecraft version profiles as release compatibility groups, not
   necessarily one profile per exact patch version.
 - Prefer the fewest unique build artifacts possible. Split release profiles or
@@ -128,20 +129,19 @@ Examples of major boundaries for this project:
   `candidate_minecraft_version_profiles` list profile file names. Release
   folders and Modrinth version suffixes use each profile's `profile_id`, which
   can be broader than the file name.
-- Initial release profiles should align with the source compat groups:
-  `1.20-1.20.4`, `1.20.5-1.21.10`, `1.21.11`, and `26.1-26.2-pre-3`, mapped
-  onto source compat groups `1.20-1.20.4`, `1.20.5-1.21.10`, `1.21.11`, and
-  `26.x`.
+- Current release profiles align with the source compat groups:
+  `1.20-1.20.4`, `1.20.5-1.21.10`, `1.21.11`, `26.1-26.1.2`, `26.2`, and
+  `26.3-snapshot-1`, mapped onto source compat groups `1.20-1.20.4`,
+  `1.20.5-1.21.10`, `1.21.11`, and `26.x`.
 - Split a release profile away from its source compat group only when compile
   probes, binary runtime checks, dependency metadata, or smoke tests prove that
   one jar cannot honestly cover the proposed range.
-- For the Minecraft `26.x` lane, start with one broad `26.1-26.2-pre-3`
-  candidate mapped to `26.x`. Split it to `26.1-26.1.2` and `26.2-pre-3` only
-  if Fabric dependency metadata, compile anchors, or smoke tests require that.
-  For prerelease Fabric metadata, remember that Modrinth uses labels like
-  `26.2-pre-3` while Fabric Loader may report/compare runtime versions like
-  `26.2-pre.3`; follow Fabric API's `minecraft` dependency string for
-  `fabric.mod.json` and keep `modrinth_game_versions` as the Modrinth label.
+- For the Minecraft `26.x` lane, keep separate active release profiles for
+  `26.1-26.1.2`, `26.2`, and `26.3-snapshot-1`, all mapped to the shared
+  `26.x` source overlay. Fabric API now advertises separate Minecraft
+  dependency predicates for these minor lines, so follow Fabric API's
+  `minecraft` dependency string for `fabric.mod.json` and keep
+  `modrinth_game_versions` as the Modrinth label.
 - This mod should need fewer compatibility overlays than Inventory Sort, but do
   not collapse ranges by assumption. Let compile probes and launcher smoke tests
   prove where the API breaks are.
@@ -150,8 +150,7 @@ Examples of major boundaries for this project:
   Minecraft version claimed by a compatibility-group profile.
 - Keep `CHANGELOG.md` as the broad repo history. Keep Modrinth-facing release
   notes focused, version-specific, and user-facing in `gradle/release-notes/`.
-- Critical compatibility surfaces are stat packet access, advancement progress
-  access, custom payload registration, client/server networking APIs, client and
-  server command builders, `ServerboundClientCommandPacket` stat requests,
-  server world identity reflection, Mixin compatibility levels, and the Minecraft
-  `26.x` Java/non-remap lane.
+- Critical compatibility surfaces are vanilla boat class/package placement,
+  `getMaxPassengers`, passenger attachment positioning, renderer submit/extract
+  method signatures, client-only class isolation, Mixin compatibility levels,
+  and the Minecraft `26.x` Java/non-remap lane.
