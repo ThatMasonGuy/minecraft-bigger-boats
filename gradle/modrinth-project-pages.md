@@ -47,3 +47,6 @@ Fabric API is required.
   as `project_type=mod`, `client_side=optional`, and `server_side=required`.
 - 2026-06-13: Published `1.0.0` as listed Modrinth versions `7VszMwsz`,
   `Wn7e3XTl`, `sb9snz5O`, and `7SOT3TOv`.
+- 2026-06-24: Published `1.0.1` as listed Modrinth versions `aTLCkiqE`,
+  `C13qBFnM`, `638gxoL5`, `ViIEU5Hi`, `7jcZxjqL`, and `gNaGk4dn`, adding
+  stable `26.2` and `26.3-snapshot-1` support.

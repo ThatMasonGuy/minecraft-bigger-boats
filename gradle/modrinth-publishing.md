@@ -45,6 +45,16 @@ Real publishes require the repository secret `MODRINTH_TOKEN`.
 
 ## Publish History
 
+- 2026-06-24: `1.0.1` was published by GitHub Actions run `28088910843` attempt
+  2 from commit `fe4617029325685b16b2d83ca85fd6100a52a9ed` with
+  `dry_run=false`, `version_type=release`, and `requested_status=listed`.
+- Modrinth version ids:
+  - `1.0.1+mc1.20-1.20.4`: `aTLCkiqE`
+  - `1.0.1+mc1.20.5-1.21.10`: `C13qBFnM`
+  - `1.0.1+mc1.21.11`: `638gxoL5`
+  - `1.0.1+mc26.1-26.1.2`: `ViIEU5Hi`
+  - `1.0.1+mc26.2`: `7jcZxjqL`
+  - `1.0.1+mc26.3-snapshot-1`: `gNaGk4dn`
 - 2026-06-13: `1.0.0` was published by GitHub Actions run `27429801346` from
   commit `61113dbe297c96f7b132dfd1ce77d010dc519b7f` with `dry_run=false`,
   `version_type=release`, and `requested_status=listed`.

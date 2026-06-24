@@ -53,6 +53,26 @@ making that historical record publish-blocking again.
 
 ## Publish Evidence
 
+- 2026-06-24: GitHub Actions run `28088910843` attempt 2 completed the real
+  `modrinth publish` workflow with `dry_run=false`, `version_type=release`, and
+  `requested_status=listed` from commit
+  `fe4617029325685b16b2d83ca85fd6100a52a9ed`.
+- The `1.0.1` publish gate built all supported profile jars, ran client and
+  dedicated-server smoke for every supported profile/game-version pair, printed
+  `BIGGERBOATS_SMOKE_TEST_PASS` and `BIGGERBOATS_SERVER_SMOKE_TEST_PASS`, and
+  uploaded the release jars to Modrinth.
+- The first attempt of run `28088910843` failed before upload because the
+  `1.20.2` client smoke setup hit a transient Loom/Minecraft download error;
+  rerunning the failed job succeeded without code changes.
+- GitHub Actions run `28088906432` completed the normal `build` workflow for the
+  `1.0.1` publish commit.
+- Published `1.0.1` Modrinth version ids:
+  - `1.0.1+mc1.20-1.20.4`: `aTLCkiqE`
+  - `1.0.1+mc1.20.5-1.21.10`: `C13qBFnM`
+  - `1.0.1+mc1.21.11`: `638gxoL5`
+  - `1.0.1+mc26.1-26.1.2`: `ViIEU5Hi`
+  - `1.0.1+mc26.2`: `7jcZxjqL`
+  - `1.0.1+mc26.3-snapshot-1`: `gNaGk4dn`
 - 2026-06-13: GitHub Actions run `27429801346` completed the real
   `modrinth publish` workflow with `dry_run=false`, `version_type=release`, and
   `requested_status=listed`.

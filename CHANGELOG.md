@@ -13,6 +13,8 @@
 - Updated the Gradle wrapper to `9.5.1` for the current Fabric 26.2 toolchain.
 - Verified `1.0.1` locally with `buildAllVersions` plus targeted client and
   dedicated-server smoke for `26.2` and `26.3-snapshot-1`.
+- Published `1.0.1` through guarded GitHub Actions run `28088910843` attempt 2
+  after the full client and dedicated-server smoke matrix passed.
 
 ## 1.0.0 - 2026-06-13
 

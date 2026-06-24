@@ -2,8 +2,15 @@
 
 ## Current Checkpoint
 
-- `1.0.1` release prep is in progress for stable Minecraft `26.2` and
-  `26.3-snapshot-1` support.
+- `v1.0.1` was published from commit
+  `fe4617029325685b16b2d83ca85fd6100a52a9ed`.
+- GitHub Release `v1.0.1` is live.
+- GitHub Actions run `28088910843` attempt 2 completed the real Modrinth
+  publish gate after attempt 1 hit a transient `1.20.2` client smoke download
+  setup failure.
+- GitHub Actions run `28088906432` completed the normal build gate for the
+  `1.0.1` publish commit.
+- `1.0.1` adds stable Minecraft `26.2` and `26.3-snapshot-1` support.
 - The old `26.1-26.2-pre-3` prerelease-era publish lane has been replaced for
   active builds with `26.1-26.1.2`, `26.2`, and `26.3-snapshot-1`, all mapped
   to the existing `26.x` source compatibility overlay.
@@ -48,11 +55,10 @@
 
 ## Next Verification
 
-1. Run the guarded Modrinth publish workflow for `1.0.1` after local checks
-   pass.
-2. Backfill `TODO.md`, `CHANGELOG.md`, `gradle/smoke-tests.md`, and publish
-   history with the workflow run id, Modrinth version ids, and exact publish
-   commit.
+1. Keep future smoke evidence tied to GitHub run ids in `gradle/smoke-tests.json`
+   before making the historical smoke matrix publish-blocking.
+2. For the next Minecraft snapshot/release, start by probing whether the shared
+   `26.x` overlay still compiles before adding a new source shim.
 
 ## Release Prep
 
@@ -65,6 +71,12 @@
   - `1.0.0+mc1.20.5-1.21.10`: `Wn7e3XTl`
   - `1.0.0+mc1.21.11`: `sb9snz5O`
   - `1.0.0+mc26.1-26.2-pre-3`: `7SOT3TOv`
+  - `1.0.1+mc1.20-1.20.4`: `aTLCkiqE`
+  - `1.0.1+mc1.20.5-1.21.10`: `C13qBFnM`
+  - `1.0.1+mc1.21.11`: `638gxoL5`
+  - `1.0.1+mc26.1-26.1.2`: `ViIEU5Hi`
+  - `1.0.1+mc26.2`: `7jcZxjqL`
+  - `1.0.1+mc26.3-snapshot-1`: `gNaGk4dn`
 - Keep active release notes in `gradle/release-notes/1.0.1.md`.
 - Keep the previous `1.0.0` release notes in `gradle/release-notes/1.0.0.md`.
 - Keep public project-page copy in `gradle/modrinth-project-pages.md`.
